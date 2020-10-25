@@ -1,0 +1,93 @@
+body {
+  background: lightseagreen;
+  text-align: center;
+  animation-name: theBackground;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.two-hands {
+  width: 500px;
+}
+
+.moneyFirstHand {
+  animation-name: moneyHand;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.finger1 {
+  animation-name: finger1Move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.finger2 {
+  animation-name: finger2Move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.fold {
+  animation-name: foldHand2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.button1 {
+  animation-name: buttonWallet;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 3em;
+  color: wheat;
+  position: absolute;
+  top: 70px;
+  text-align: center;
+  width: 100%;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+@keyframes theBackground {
+  50% {
+    background-color: olive;
+  }
+}
+
+@keyframes finger1Move {
+  10% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes finger2Move {
+  20% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes moneyHand {
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes foldHand2 {
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes buttonWallet {
+  50% {
+    transform: translateX(-4px);
+  }
+}
